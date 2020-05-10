@@ -1,0 +1,116 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    background-image: url("./pictures/night.gif");
+    background-size: 100% 100%;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Bungee', cursive;
+    font-family: 'Forum', cursive;
+}
+header p{
+    font-size: 30px;
+}
+
+.pads{
+    width : 100%;
+    display: flex;
+    
+
+}
+.pads > div{
+    height : 100px;
+    width : 100px;
+    flex : 1;
+}
+.pad1{
+    background: #b91018e3;
+}
+.pad2{
+    background: #d87110;
+}
+.pad3{
+    background: #6c1c7c;
+}
+.pad4{
+    background: #b1ae19;
+}
+.pad5{
+    background: #348f95 ;
+}
+.pad6{
+    background: #389b24;
+}
+.pad7{
+    background: #492daf;
+}
+
+
+.visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+  }
+
+  @keyframes jump{
+    0%{
+        bottom : 0%;
+        left : 20%;
+    }
+    50%{
+        bottom : 50%;
+        left :   50%;
+    }
+    100%{
+        bottom : 0%;
+        left : 80%;
+    }
+}
+footer{
+    position:absolute;
+    top:0;
+    right:0;
+    font-family: 'Forum', cursive;
+    font-size: 18px;
+    color : white;
+}
+.pad1:hover{
+    background: #cc0d17; 
+}
+.pad2:hover{
+    background: #c57326; 
+}
+.pad3:hover{
+    background: #c060d3; 
+}
+.pad4:hover{
+    background: #d3d160; 
+}
+.pad5:hover{
+    background: #11838b; 
+}
+.pad6:hover{
+    background: #197407; 
+}
+.pad7:hover{
+    background: #19055f; 
+}
